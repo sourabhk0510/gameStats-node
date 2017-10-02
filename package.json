@@ -1,0 +1,23 @@
+{
+  "name": "gamestats",
+  "version": "1.0.0",
+  "description": "Api to get game statistics player wise and to post game data ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "GameStat-Node"
+  },
+  "keywords": [
+    "RESRfull",
+    "API"
+  ],
+  "author": "sourabh kamble",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1",
+    "mongoose": "^4.11.14"
+  }
+}
