@@ -9,5 +9,5 @@ app.use(bodyParser.urlencoded({ "extended": false }));
 
 app.use('/', new GamesRoutes_1.GamesRoutes().routes);
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log("Listening to PORT 3000");
