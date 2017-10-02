@@ -1,0 +1,16 @@
+
+node_modules/
+obj/
+data/
+.vscode/
+.idea/
+.ntvs_analysis.dat
+.DS_Store
+typings/
+reports/
+*.log.1115927264
+newrelic_agent.log
+*.log
+crash*.txt
+api_calls.json
+/cSpell.json
