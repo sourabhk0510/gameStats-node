@@ -5,8 +5,8 @@ This Project retries the game statistical data for players.
 - Heroku: https://gamestatistics.herokuapp.com
 
 <br/> action : /getPlayerStats
-<br/> request : POST 
-<br/> body :  { 'player_id' : "#{range}"}  => range [101..110]
+<br/> request : GET
+<br/> params :  { 'player_id' : "#{range}"}  => range [101..110]
 
 <br/> action : /generateMatchData
 <br/> request : POST
