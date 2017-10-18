@@ -13,7 +13,7 @@ var GamesRoutes = (function() {
             var router = express.Router();
             router.route("/players").get(GamesController_1.GamesController.getAllRecords);
             router.route("/generateMatchData").post(GamesController_1.GamesController.generateMatchData);
-            router.route("/getPlayerStats").post(GamesController_1.GamesController.getPlayerStats);
+            router.route("/getPlayerStats").get(GamesController_1.GamesController.getPlayerStats);
             return router;
         },
         enumerable: true,

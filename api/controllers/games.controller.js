@@ -30,7 +30,7 @@ var GamesController = {
     },
 
     getPlayerStats: function(req, res) {
-        var player_id = req.body.player_id;
+        var player_id = req.query.player_id;
         gamesModel.aggregate([{
                 $match: {
                     player_id: player_id
