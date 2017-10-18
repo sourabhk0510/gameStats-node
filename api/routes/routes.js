@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var express = require("express");
 var apicache = require("apicache");
-var cache = apicache.middleware
 var GamesController_1 = require("../controllers/games.controller");
 
 var GamesRoutes = (function() {
@@ -13,6 +12,7 @@ var GamesRoutes = (function() {
     Object.defineProperty(GamesRoutes.prototype, "routes", {
         get: function() {
             var router = express.Router();
+            var cache = apicache.middleware;
             router.route("/players").get(GamesController_1.GamesController.getAllRecords);
             router.route("/generateMatchData").post(GamesController_1.GamesController.generateMatchData);
             router.route("/getPlayerStats").get(cache('1 minutes'), GamesController_1.GamesController.getPlayerStats);
