@@ -1,9 +1,7 @@
 var express = require("express");
 var apicache = require("apicache");
 var app = express();
-var cache = apicache.middleware
 var bodyParser = require("body-parser");
-var mongoOp = require("./api/models/player");
 var GamesRoutes_1 = require("./api/routes/routes");
 
 app.use(bodyParser.json());
