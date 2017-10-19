@@ -24,4 +24,5 @@ var GamesRoutes = (function() {
     return GamesRoutes;
 }());
 
+
 exports.GamesRoutes = GamesRoutes;
